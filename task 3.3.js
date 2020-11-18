@@ -1,27 +1,23 @@
 "use strict";
 
-let getOverage = function () {
-  let arr = [];
-  let sum = 0;
-  let res = sum / arr.length;
+let arr = [];
 
-  let num = +prompt("Enter a three digit number: ");
-  for (let i = 1; i <= num; i++) {
-    let newEl;
-    if (i % 2 !== 0) {
-      newEl = i;
-      arr.push(newEl);
-    }
+let num = +prompt("Enter a three digit number: ");
 
-    for (let j = 0; j <= arr.length; j++) {
-      sum += arr[j];
-      console.log(sum);
-    }
+for (let i = 1; i <= num; i++) {
+  let newEl;
+  if (i % 2 !== 0) {
+    newEl = i;
+
+    arr.push(newEl);
   }
+}
 
-  
+let sum = arr.reduce((a, b) => a + b, 0);
+let res;
+res = sum / arr.length;
+//console.log(arr);
+//console.log(arr.length);
+//console.log(sum);
 
-  return res;
-};
-
-console.log(getOverage());
+console.log(res);
