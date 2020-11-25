@@ -1,8 +1,8 @@
-"use strict";
-let a = 5;
-let b = 10;
-let sum = a + b;
-let mult = a * b;
+export function sum(a, b) {
+    return a + b;
+  }
 
-console.log(sum);
-console.log(mult);
+  export function mult(a, b) {
+    return a * b;
+  }
+  
