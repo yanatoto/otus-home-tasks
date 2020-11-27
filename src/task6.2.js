@@ -1,13 +1,13 @@
 const isWord = function (string) {
   let res;
-  const substring = ' ';
+  const substring = " ";
   const param = string.indexOf(substring) !== -1;
 
   if (param) {
-    res = 'false';
+    res = "false";
   } else {
-    res = 'true';
+    res = "true";
   }
   return console.log(res);
 };
-isWord('Обратите внимание на дорогу');
+isWord("Обратите внимание на дорогу");

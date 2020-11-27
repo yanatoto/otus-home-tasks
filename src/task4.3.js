@@ -1,7 +1,7 @@
 const user = {
-  name: 'John',
+  name: "John",
   age: 25,
-  role: 'admin',
+  role: "admin",
 };
 
 const { name, age, role } = user;

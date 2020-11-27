@@ -1,8 +1,8 @@
 const user = {
-  name: 'John',
+  name: "John",
 };
 
-const age = +prompt('Enter your age: ');
+const age = +prompt("Enter your age: ");
 user.age = age;
 
 console.log(user);

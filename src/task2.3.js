@@ -4,9 +4,9 @@ const ifCompatible = function (circle, square) {
   const squareParam = Math.sqrt(square);
 
   if (circleDiameter <= squareParam) {
-    console.log('yes');
+    console.log("yes");
   } else {
-    console.log('no');
+    console.log("no");
   }
 };
 

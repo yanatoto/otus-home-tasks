@@ -1,6 +1,6 @@
 const arr = [];
 
-const num = +prompt('Enter a three digit number: ');
+const num = +prompt("Enter a three digit number: ");
 
 for (let i = 1; i <= num; i++) {
   let newEl;

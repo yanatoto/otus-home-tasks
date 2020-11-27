@@ -5,7 +5,7 @@
  * @returns {boolean}
  */
 export function isPalindrom(str) {
-  return str === str.split('').reverse().join('');
+  return str === str.split("").reverse().join("");
 }
 
-console.log(isPalindrom('abc'));
+console.log(isPalindrom("abc"));

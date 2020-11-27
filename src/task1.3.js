@@ -1,4 +1,4 @@
-const num = +prompt('Enter three-digit number: ');
+const num = +prompt("Enter three-digit number: ");
 
 function getSumNumber(num) {
   let sum = 0;
