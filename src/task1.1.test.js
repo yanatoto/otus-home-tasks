@@ -1,5 +1,5 @@
 
-import { sum, mult } from './task 1.1';
+import { sum, mult } from './task1.1';
 
 
 describe('sum', () => {
