@@ -1,8 +1,6 @@
-"use strict";
+const arr = [];
 
-let arr = [];
-
-let num = +prompt("Enter a three digit number: ");
+const num = +prompt('Enter a three digit number: ');
 
 for (let i = 1; i <= num; i++) {
   let newEl;
@@ -13,11 +11,11 @@ for (let i = 1; i <= num; i++) {
   }
 }
 
-let sum = arr.reduce((a, b) => a + b, 0);
+const sum = arr.reduce((a, b) => a + b, 0);
 let res;
 res = sum / arr.length;
-//console.log(arr);
-//console.log(arr.length);
-//console.log(sum);
+// console.log(arr);
+// console.log(arr.length);
+// console.log(sum);
 
 console.log(res);

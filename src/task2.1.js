@@ -1,11 +1,8 @@
-"use strict";
-let a = 20;
-let b = 35;
+const a = 20;
+const b = 35;
 
 if (a > b) {
-    console.log(a);
+  console.log(a);
 } else {
-    console.log(b)
+  console.log(b);
 }
-
-

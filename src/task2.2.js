@@ -1,18 +1,17 @@
-"use strict";
-let num = +prompt("Enter a number frim 1 to 12: ");
-let months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "Dezember"
+const num = +prompt('Enter a number frim 1 to 12: ');
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'Dezember',
 ];
 
 for (let i = 0; i <= months.length; i++) {
@@ -20,7 +19,3 @@ for (let i = 0; i <= months.length; i++) {
     console.log(months[i]);
   }
 }
-
-
-
-

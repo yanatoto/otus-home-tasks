@@ -1,7 +1,6 @@
-"use strict";
-let a = "kdjfasljfladsjflasjdflkasdj";
-let b = "ksdjfkdlsjflsajfkljfasljkfalfj";
+const a = 'kdjfasljfladsjflasjdflkasdj';
+const b = 'ksdjfkdlsjflsajfkljfasljkfalfj';
 
-let sum = a.length + b.length;
+const sum = a.length + b.length;
 
 console.log(sum);
