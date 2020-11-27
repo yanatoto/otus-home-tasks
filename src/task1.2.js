@@ -1,6 +1,3 @@
-const a = 'kdjfasljfladsjflasjdflkasdj';
-const b = 'ksdjfkdlsjflsajfkljfasljkfalfj';
-
-const sum = a.length + b.length;
-
-console.log(sum);
+export function getStrLength(a, b) {
+  return a.length + b.length;
+}

@@ -1,6 +1,4 @@
-
 import { sum, mult } from './task1.1';
-
 
 describe('sum', () => {
   it('returns sum of params', () => {
