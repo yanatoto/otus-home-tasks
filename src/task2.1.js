@@ -1,8 +1,9 @@
-const a = 20;
-const b = 35;
-
-if (a > b) {
-  console.log(a);
-} else {
-  console.log(b);
+/* eslint-disable no-console */
+// В переменных a и b хранятся числа. Вывести в
+// консоль наибольшее из них.
+export function getBiggerNum(a, b) {
+  if (a > b) {
+    return console.log(a);
+  }
+  return console.log(b);
 }

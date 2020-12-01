@@ -1,6 +1,12 @@
-const num = +prompt("Enter three-digit number: ");
+/* eslint-disable no-alert */
+/* eslint-disable no-console */
 
-function getSumNumber(num) {
+// Написать программу, которая запрашивает у
+// пользователя ввод трёхзначного числа, а потом
+// выводит в консоль сумму цифр введённого числа
+let num = +prompt("Enter three-digit number: ");
+
+export function getSumOfNumbers() {
   let sum = 0;
   let tmp;
   while (num) {
@@ -11,4 +17,4 @@ function getSumNumber(num) {
   return sum;
 }
 
-console.log(getSumNumber(num));
+console.log(getSumOfNumbers(num));
