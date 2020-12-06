@@ -4,10 +4,9 @@ import { consoleSumOfPromptDigits } from "./task1.3";
 
 describe("consoleSumOfPromptDigits", () => {
   it("logs to console sum of prompt digits", () => {
-    const digits = [1, 2, 3];
-    jest.spyOn(window, "prompt").mockImplementation(() => digits.shift());
+    jest.spyOn(window, "prompt").mockReturnValue(6);
     jest.spyOn(console, "log");
-    consoleSumOfPromptDigits();
-    expect(console.log).toHaveBeenCalledWith(6);
+
+    expect(consoleSumOfPromptDigits()).toBe(6);
   });
 });
