@@ -6,7 +6,7 @@
 // выводит в консоль сумму цифр введённого числа
 
 export function consoleSumOfPromptDigits() {
-  let num = Number(prompt("123"));
+  let num = Number(prompt("Enter three digit number: "));
   let sum = 0;
   let tmp;
   while (num) {

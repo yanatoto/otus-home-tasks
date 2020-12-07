@@ -21,10 +21,10 @@ export function getMonth() {
     "Dezember",
   ];
 
-  for (let i = 0; i <= months.length; i++) {
-    if (months[i] === months[num - 1]) {
-      console.log(months[i]);
-    }
+  if (num <= 12) {
+    console.log(months[num - 1]);
+  } else {
+    console.log("Number must be between 1 and 12");
   }
 }
-console.log(getMonth());
+getMonth();
