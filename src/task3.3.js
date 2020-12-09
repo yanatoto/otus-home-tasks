@@ -1,21 +1,28 @@
-const arr = [];
+/* eslint-disable no-alert */
+/* eslint-disable no-console */
+/* eslint-disable no-plusplus */
 
-const num = +prompt("Enter a three digit number: ");
+// Запросить у пользователя ввод числа N. Вывести в
+// консоль среднее арифметическое всех нечётных
+// чисел от 1 до N.
+export function getArithOverage() {
+  const arr = [];
 
-for (let i = 1; i <= num; i++) {
-  let newEl;
-  if (i % 2 !== 0) {
-    newEl = i;
+  const num = +prompt("Enter a number: ");
 
-    arr.push(newEl);
+  for (let i = 1; i <= num; i++) {
+    let newEl;
+    if (i % 2 !== 0) {
+      newEl = i;
+
+      arr.push(newEl);
+    }
   }
+
+  const sum = arr.reduce((a, b) => a + b, 0);
+
+  const res = sum / arr.length;
+  return res;
 }
 
-const sum = arr.reduce((a, b) => a + b, 0);
-let res;
-res = sum / arr.length;
-// console.log(arr);
-// console.log(arr.length);
-// console.log(sum);
-
-console.log(res);
+console.log(getArithOverage());

@@ -5,8 +5,8 @@
 // пользователя ввод трёхзначного числа, а потом
 // выводит в консоль сумму цифр введённого числа
 
-export function consoleSumOfPromptDigits() {
-  let num = Number(prompt("Enter three digit number: "));
+export function sumOfPromptDigits() {
+  let num = Number(prompt("123"));
   let sum = 0;
   let tmp;
   while (num) {
@@ -17,4 +17,4 @@ export function consoleSumOfPromptDigits() {
   return sum;
 }
 
-console.log(consoleSumOfPromptDigits());
+console.log(sumOfPromptDigits());
