@@ -1,8 +1,16 @@
-const user = {
-  name: "John",
-};
+/* eslint-disable no-alert */
+// Запросить у пользователя ввод числа. Записать
+// введенное значение в поле age объекта user.
 
-const age = +prompt("Enter your age: ");
-user.age = age;
+export function getUserAge() {
+  const user = {
+    name: "John",
+  };
 
-console.log(user);
+  const age = Number(prompt("Enter your age: "));
+  user.age = age;
+
+  return user;
+}
+
+getUserAge();
