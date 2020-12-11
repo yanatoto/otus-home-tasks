@@ -1,11 +1,15 @@
-const user = {
-  name: "John",
-};
+// Создать копию объекта user с именем admin.
+// Добавить новому объекту поле role со значением
+// ‘admin’.
 
-const age = +prompt("Enter your age: ");
-user.age = age;
+export function addNewProperty() {
+  const user = {
+    name: "John",
+    age: 25,
+  };
 
-const admin = { ...user };
-admin.role = "admin";
+  const admin = { ...user };
+  admin.role = "admin";
 
-console.log(admin);
+  return admin;
+}

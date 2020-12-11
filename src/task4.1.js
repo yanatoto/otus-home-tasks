@@ -2,7 +2,7 @@
 // Запросить у пользователя ввод числа. Записать
 // введенное значение в поле age объекта user.
 
-export function getUserAge() {
+export function getUser() {
   const user = {
     name: "John",
   };

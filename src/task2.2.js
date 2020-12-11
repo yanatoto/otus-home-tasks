@@ -27,4 +27,3 @@ export function getMonth() {
     console.log("Number must be between 1 and 12");
   }
 }
-getMonth();

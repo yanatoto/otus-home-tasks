@@ -17,4 +17,4 @@ export function sumOfPromptDigits() {
   return sum;
 }
 
-console.log(sumOfPromptDigits());
+// console.log(sumOfPromptDigits());

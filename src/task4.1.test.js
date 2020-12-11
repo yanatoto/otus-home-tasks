@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
-import { getUserAge } from "./task4.1";
+import { getUser } from "./task4.1";
 
-describe("getUserAge", () => {
+describe("getUser", () => {
   it("returns object user with user age", () => {
-    jest.spyOn(window, "prompt").mockImplementation(() => "25");
+    const value = 25;
+    jest.spyOn(window, "prompt").mockImplementation(() => value);
 
-    expect(getUserAge()).toEqual({ name: "John", age: 25 });
+    const user = getUser();
+    expect(user).toEqual({ name: "John", age: 25 });
   });
 });
