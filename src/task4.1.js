@@ -9,8 +9,5 @@ export function getUserAge() {
 
   const age = Number(prompt("Enter your age: "));
   user.age = age;
-
   return user;
 }
-
-getUserAge();
