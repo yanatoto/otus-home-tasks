@@ -1,9 +1,15 @@
-const user = {
-  name: "John",
-  age: 25,
-  role: "admin",
-};
+/* eslint-disable no-console */
+// Записать все значения полей объекта admin в
+// отдельные переменные. Имена переменных
+// должны совпадать с названиями полей.
+export function getDestructuredElements() {
+  const admin = {
+    name: "John",
+    age: 25,
+    role: "admin",
+  };
 
-const { name, age, role } = user;
+  const { name, age, role } = admin;
 
-console.log(name, age, role);
+  return [name, age, role];
+}
