@@ -1,7 +1,12 @@
-const diff = function (a, b) {
+// Напишите функцию diff, которая получает в качестве
+// параметров 2 числа и возвращает разницу между
+// наибольшим и наименьшим.
+export function diff(a, b) {
+  let res;
   if (a > b) {
-    return a - b;
+    res = a - b;
+  } else {
+    res = b - a;
   }
-  return b - a;
-};
-console.log(diff(10, 20));
+  return res;
+}
