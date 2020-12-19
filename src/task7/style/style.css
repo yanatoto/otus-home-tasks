@@ -1,0 +1,36 @@
+button {
+  text-decoration: none;
+  color: #2962ff;
+  border: 2px solid #2962ff;
+  border-radius: 5px;
+  font: 22px "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 5px 36px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #2962ff;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  text-decoration: none;
+  color: #181b24;
+  border: 2px solid #0d0d0e;
+  border-radius: 5px;
+  font: 22px "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 5px 36px;
+  margin: 10px;
+}
+
+p {
+  border: 2px solid black;
+  background-color: blanchedalmond;
+  padding: 5px 36px;
+  margin: 10px;
+  margin-right: 100px;
+}
