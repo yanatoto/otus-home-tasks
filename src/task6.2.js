@@ -1,4 +1,8 @@
-const isWord = function (string) {
+// Напишите функцию isWord, которая принимает на
+// вход текстовую строку. Функция возвращает true, если
+// строка состоит из одного слова и false, если из
+// нескольких
+export function isWord(string) {
   let res;
   const substring = " ";
   const param = string.indexOf(substring) !== -1;
@@ -8,6 +12,6 @@ const isWord = function (string) {
   } else {
     res = "true";
   }
-  return console.log(res);
-};
+  return res;
+}
 isWord("Обратите внимание на дорогу");
