@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { isWord } from "./task6.2";
 
 describe("isWord", () => {

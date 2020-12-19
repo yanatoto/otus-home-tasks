@@ -1,6 +1,6 @@
-const pow = function (a, x) {
-  let res;
-  res = Math.pow(a, x);
-  console.log(res);
-};
-pow(2, 5);
+// Напишите функцию pow(a, x), которая вернёт
+// значение числа a, возведённого в степень x
+export function pow(a, x) {
+  const res = a ** x;
+  return res;
+}
