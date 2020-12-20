@@ -11,42 +11,18 @@
 // 3.*Если параграфов становится больше 5, первый из
 // них удаляется.
 
-const inputText = document.querySelector(".text-field");
-inputText.removeEventListener("input", showButton);
-inputText.addEventListener("input", hideButton);
+const input = document.querySelector(".text-field");
+const button = document.querySelector(".button");
 
-function hideButton() {
-  const button = document.querySelector(".button");
-
+button.hidden = true;
+input.addEventListener("input", function shadow() {
+  button.hidden = !this.value.length;
+});
+button.addEventListener("click", () => {
   button.hidden = true;
-
-  inputText.removeEventListener("input", hideButton);
-  inputText.addEventListener("input", showButton);
-}
-
-function showButton() {
-  const button = document.querySelector(".button");
-
-  button.hidden = false;
-
-  inputText.removeEventListener("input", showButton);
-  inputText.addEventListener("input", hideButton);
-}
-
-function checkInput() {
-  // const button = document.querySelector(".button");
-  if (inputText.value === "") {
-    hideButton();
-  } else {
-    showButton();
-  }
-}
-checkInput();
-
-// const inputText = document.querySelector(".text-field");
+});
 
 function addNewParagraph() {
-  const button = document.querySelector(".button");
   button.addEventListener("click", function () {
     const paragraph = document.querySelector("#paragraph");
     const elements = paragraph.querySelectorAll("p");
@@ -56,8 +32,8 @@ function addNewParagraph() {
       const elem = document.querySelector("p");
       paragraph.removeChild(elem);
     }
-    newElement.textContent = inputText.value;
-    inputText.value = "";
+    newElement.textContent = input.value;
+    input.value = "";
   });
 }
 addNewParagraph();
