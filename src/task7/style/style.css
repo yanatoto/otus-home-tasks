@@ -30,6 +30,7 @@ input {
 p {
   border: 2px solid black;
   background-color: blanchedalmond;
+  font: 22px "Open Sans", Helvetica, Arial, sans-serif;
   padding: 5px 36px;
   margin: 10px;
   margin-right: 100px;
