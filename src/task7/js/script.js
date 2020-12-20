@@ -13,8 +13,8 @@
 
 const input = document.querySelector(".text-field");
 const button = document.querySelector(".button");
-
 button.hidden = true;
+
 input.addEventListener("input", function shadow() {
   button.hidden = !this.value.length;
 });
