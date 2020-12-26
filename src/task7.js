@@ -10,30 +10,35 @@
 // содержащий текст из поля ввода.
 // 3.*Если параграфов становится больше 5, первый из
 // них удаляется.
+export function addForm() {
+  const input = document.querySelector(".input");
+  const button = document.querySelector(".button");
 
-const input = document.querySelector(".text-field");
-const button = document.querySelector(".button");
-button.hidden = true;
+  // button.className = "button";
+  input.className = "input";
+  button.innerText = "Click";
 
-input.addEventListener("input", function shadow() {
-  button.hidden = !this.value.length;
-});
-button.addEventListener("click", () => {
   button.hidden = true;
-});
 
-function addNewParagraph() {
+  input.addEventListener("input", function () {
+    button.hidden = !this.value.length;
+  });
+
   button.addEventListener("click", function () {
+    const p = document.createElement("p");
+    p.textContent = input.value;
+
     const paragraph = document.querySelector("#paragraph");
+    paragraph.append(p);
+    input.value = "";
+    button.hidden = true;
+
     const elements = paragraph.querySelectorAll("p");
-    const newElement = document.createElement("p");
-    paragraph.append(newElement);
-    if (elements.length >= 5) {
+
+    if (elements.length > 5) {
       const elem = document.querySelector("p");
       paragraph.removeChild(elem);
     }
-    newElement.textContent = input.value;
-    input.value = "";
   });
 }
-addNewParagraph();
+// addForm();
