@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-console */
 /* eslint-disable func-names */
@@ -10,34 +11,38 @@
 // содержащий текст из поля ввода.
 // 3.*Если параграфов становится больше 5, первый из
 // них удаляется.
-export function addForm() {
-  const input = document.querySelector(".input");
-  const button = document.querySelector(".button");
+export function addForm(el) {
+  const input = document.createElement("input");
+  const button = document.createElement("button");
 
-  // button.className = "button";
-  input.className = "input";
+  for (let i = 1; i <= 3; i++) {
+    const p = document.createElement("p");
+    el.appendChild(p);
+    p.innerText = "Text";
+  }
+
+  input.classList.add("input");
+  button.classList.add("button");
   button.innerText = "Click";
 
   button.hidden = true;
+  el.appendChild(input);
+  el.appendChild(button);
 
   input.addEventListener("input", function () {
     button.hidden = !this.value.length;
   });
 
   button.addEventListener("click", function () {
-    const p = document.createElement("p");
-    p.textContent = input.value;
+    const pp = document.createElement("p");
+    pp.innerText = input.value;
 
-    const paragraph = document.querySelector("#paragraph");
-    paragraph.append(p);
+    el.append(pp);
     input.value = "";
     button.hidden = true;
 
-    const elements = paragraph.querySelectorAll("p");
-
-    if (elements.length > 5) {
-      const elem = document.querySelector("p");
-      paragraph.removeChild(elem);
+    if (document.querySelectorAll("p").length > 5) {
+      document.querySelectorAll("p")[0].remove();
     }
   });
 }

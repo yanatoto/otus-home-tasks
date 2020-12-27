@@ -1,7 +1,10 @@
+/* eslint-disable no-console */
 import { addForm } from "./task7";
 
 describe("", () => {
   let el;
+  let button;
+  let input;
 
   beforeEach(() => {
     el = document.createElement("div");
@@ -9,16 +12,18 @@ describe("", () => {
 
   test("Create HTML page", () => {
     addForm(el);
-    const button = el.querySelector(".button");
-    const input = el.querySelector(".input");
-    expect(button).not.toBe(null);
-    expect(input).not.toBe(null);
+
+    button = el.querySelector(".button");
+    input = el.querySelector(".input");
+
+    expect(button).toBeTruthy();
+    expect(input).toBeTruthy();
   });
 
-  test("Shadow button", () => {
+  test("Show button", () => {
     addForm(el);
-    const button = el.querySelector(".button");
-    const input = el.querySelector(".input");
+    button = el.querySelector(".button");
+    input = el.querySelector(".input");
     input.value = "123";
     input.dispatchEvent(new global.window.Event("input"));
 
@@ -28,10 +33,10 @@ describe("", () => {
     expect(button.hidden).toBeTruthy();
   });
 
-  it("only 5 p is enabled", () => {
+  it("5 x p", () => {
     addForm(el);
-    const button = el.querySelector(".button");
-    const input = el.querySelector(".input");
+    button = el.querySelector(".button");
+    input = el.querySelector(".input");
     let text;
     for (let i = 0; i < 7; i += 1) {
       text = `${Math.random()}`;
@@ -42,7 +47,7 @@ describe("", () => {
 
     expect(input.value).toBe("");
     expect(button.hidden).toBe(true);
-    expect(el.querySelectorAll("p").length).toBe(5);
-    expect(el.childNodes[6].innerText).toBe(text);
+    expect(el.querySelectorAll("p").length).toBe(10);
+    expect(el.childNodes[11].innerText).toBe(text);
   });
 });

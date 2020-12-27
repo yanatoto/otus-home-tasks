@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div>
-      <button class="button">Click</button>
-    </div>
-    <input type="text" class="input" />
-    <div id="paragraph">
-      <p>Некоторый текст</p>
-      <p>Некоторый текст</p>
-      <p>Некоторый текст</p>
+    <div class="div">
+      <!-- <button class="button">Click</button>
+       <input type="text" class="input" />
+       <p>Некоторый текст</p>
+       <p>Некоторый текст</p>
+       <p>Некоторый текст</p> -->
     </div>
 
-    <script src="..\task7.js"></script>
+    <script type="module">
+      import { addForm } from "../task7.js";
+      addForm(document.querySelector(".div"));
+    </script>
   </body>
 </html>
