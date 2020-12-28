@@ -31,5 +31,5 @@ export function getMinsPassed() {
   const mins = now.getMinutes();
   const minsPass = hrs * 60 + mins;
 
-  return console.log(minsPass);
+  return minsPass;
 }
