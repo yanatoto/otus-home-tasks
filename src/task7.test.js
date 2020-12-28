@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { addForm } from "./task7";
 
-describe("", () => {
+describe("addForm", () => {
   let el;
   let button;
   let input;
