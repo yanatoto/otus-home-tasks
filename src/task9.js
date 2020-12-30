@@ -16,15 +16,14 @@ export function rightTriangle(a, b, c) {
 
 export function getPerimeterOfCircle() {
   const radius = prompt("Enter a radius: ");
-  const perimeter = 2 * Math.PI * radius;
+  const perimeter = Math.floor(2 * Math.PI * radius);
 
   return perimeter;
 }
-console.log(getPerimeterOfCircle());
 
 export function getSquareOfCircle() {
   const radius = prompt("Enter a radius: ");
-  const square = Math.PI * radius ** 2;
+  const square = Math.floor(Math.PI * radius ** 2);
 
   return square;
 }
