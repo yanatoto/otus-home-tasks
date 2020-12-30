@@ -35,17 +35,15 @@ export function getSquareOfCircle() {
 export function getSquareRoot(a, b, c) {
   // quadraticEquation ax2 + bx + c = 0
   const D = b ** 2 - 4 * a * c;
-
   let res;
 
   if (D < 0) {
     res = console.log("This equation has not solution");
   } else if (D === 0) {
-    res = -b / (2 * a);
+    res = console.log(-b / (2 * a));
   }
-  const x1 = (-b + Math.sqrt(D)) / (2 * a);
-  const x2 = (-b - Math.sqrt(D)) / (2 * a);
-
+  const x1 = (-b - Math.sqrt(D)) / (2 * a);
+  const x2 = (-b + Math.sqrt(D)) / (2 * a);
   res = console.log(x1, x2);
 
   return res;
