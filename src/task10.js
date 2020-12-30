@@ -8,7 +8,7 @@
 // 3.*Номером телефона.
 
 export function isItDate() {
-  const regexp = /^\d{2}-\d{2}-\d{4}$/;
+  const regexp = /(^[0-3]{1}[0-9]{1}[/.\-_\\]{1}[0-1]{1}[0-9]{1}[/.\-_\\]{1}[0-9]{2,4}$)|(^[0-1]{1}[0-9]{1}[/.\-_\\]{1}[0-3]{1}[0-9]{1}[/.\-_\\]{1}[0-9]{2,4}$)/;
   const date = prompt("Enter the date: ");
   return regexp.test(date);
 }
@@ -21,6 +21,6 @@ export function isItEmail() {
 
 export function isItPhoneNumber() {
   const regexp = /^\+?[0-9]{1,4}-?[0-9]{7}$|(^\+?[0-9]{1,4}-?[0-9]{3}-?[0-9]{4}$)|(^\+?[0-9]{1,4}-?[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$)/;
-  const phone = prompt("Enter mobile number: ");
+  const phone = prompt("Enter phone number: ");
   return regexp.test(phone);
 }
