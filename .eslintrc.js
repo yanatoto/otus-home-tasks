@@ -11,7 +11,7 @@ module.exports = {
   },
   rules: {
     "import/prefer-default-export": "off",
-    "max-len": ["error", { code: 90 }],
+    "max-len": ["error", { code: 228 }],
   },
   plugins: ["jest"],
 };
