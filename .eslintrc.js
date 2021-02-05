@@ -10,6 +10,9 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "no-console": "off",
+    "no-alert": "off",
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "import/prefer-default-export": "off",
     "max-len": ["error", { code: 228 }],
   },

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getUser } from "./task4.1";
 
 describe("getUser", () => {

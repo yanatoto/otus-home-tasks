@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getBiggerNum } from "./task2.1";
 
 describe("getBiggerNum", () => {

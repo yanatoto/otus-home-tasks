@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getNumbers } from "./task3.1";
 
 describe("getNumbers", () => {

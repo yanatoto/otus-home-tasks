@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getWeekDay, getMinsPassed, getYoungerUser } from "./task8";
 
 describe("getWeekDay, getMinsPassed, getYoungerUser", () => {

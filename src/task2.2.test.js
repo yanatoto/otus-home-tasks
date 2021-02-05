@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getMonth } from "./task2.2";
 
 describe("getMonth", () => {

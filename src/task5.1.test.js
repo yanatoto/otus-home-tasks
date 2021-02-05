@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getArraySum } from "./task5.1";
 
 describe("getArraySum", () => {

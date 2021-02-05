@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { addNewProperty } from "./task4.2";
 
 describe("addNewProperty", () => {

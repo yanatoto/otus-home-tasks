@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getStrLength } from "./task1.2";
 
 describe("getStrLength", () => {

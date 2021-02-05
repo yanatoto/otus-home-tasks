@@ -1,7 +1,3 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-console */
-/* eslint-disable no-plusplus */
-
 // Запросить у пользователя ввод числа N. Вывести в
 // консоль среднее арифметическое всех нечётных
 // чисел от 1 до N.

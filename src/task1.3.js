@@ -1,6 +1,3 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-console */
-
 // Написать программу, которая запрашивает у
 // пользователя ввод трёхзначного числа, а потом
 // выводит в консоль сумму цифр введённого числа
@@ -16,5 +13,3 @@ export function sumOfPromptDigits() {
   }
   return sum;
 }
-
-// console.log(sumOfPromptDigits());

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { diff } from "./task6.1";
 
 describe("diff", () => {

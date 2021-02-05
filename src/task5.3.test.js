@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getMinEl, getMaxEl } from "./task5.3";
 
 describe("getMinEl, getMaxEl", () => {

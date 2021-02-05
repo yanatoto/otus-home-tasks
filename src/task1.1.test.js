@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { sum, mult } from "./task1.1";
 
 describe("sum", () => {

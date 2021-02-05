@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { ifCompatible } from "./task2.3";
 
 describe("ifCompatible", () => {

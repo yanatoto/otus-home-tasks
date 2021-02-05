@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-plusplus */
 // Найдите и выведите в консоль наибольший и
 // наименьший элементы исходного массива.
 

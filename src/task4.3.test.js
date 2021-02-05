@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
 import { getDestructuredElements } from "./task4.3";
 
 describe("getDestructuredElements", () => {
@@ -10,7 +8,7 @@ describe("getDestructuredElements", () => {
       role: "admin",
     };
 
-    const variables = getDestructuredElements();
+    getDestructuredElements();
 
     expect(admin.role).toEqual("admin");
   });

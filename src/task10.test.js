@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { isItDate, isItEmail, isItPhoneNumber } from "./task10";
 
 describe("isItDate, isItEmail, isItPhoneNumber,", () => {

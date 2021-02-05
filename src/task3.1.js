@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-plusplus */
 // Вывести в консоль сумму всех целых чисел от 50 до
 // 100.
 
