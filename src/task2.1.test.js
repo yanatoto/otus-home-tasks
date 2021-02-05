@@ -3,6 +3,8 @@ import { getBiggerNum } from "./task2.1";
 
 describe("getBiggerNum", () => {
   it("returns bigger number", () => {
-    expect(getBiggerNum(1, 2)).toBe(console.log(2));
+    jest.spyOn(console, "log");
+    getBiggerNum(5, 10);
+    expect(console.log).toHaveBeenCalledWith(10);
   });
 });
