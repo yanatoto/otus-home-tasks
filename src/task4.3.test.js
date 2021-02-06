@@ -11,5 +11,7 @@ describe("getDestructuredElements", () => {
     getDestructuredElements();
 
     expect(admin.role).toEqual("admin");
+    expect(admin.age).toEqual(25);
+    expect(admin.name).toEqual("John");
   });
 });
