@@ -37,7 +37,7 @@ describe("addForm", () => {
     button = el.querySelector(".button");
     input = el.querySelector(".input");
     let text;
-    for (let i = 0; i < 7; i += 1) {
+    for (let i = 0; i < 2; i++) {
       text = `${Math.random()}`;
       input.value = text;
       input.dispatchEvent(new window.Event("input"));
@@ -46,7 +46,7 @@ describe("addForm", () => {
 
     expect(input.value).toBe("");
     expect(button.hidden).toBe(true);
-    expect(el.querySelectorAll("p").length).toBe(10);
-    expect(el.childNodes[11].innerText).toBe(text);
+    expect(el.querySelectorAll("p").length).toBe(5);
+    expect(el.childNodes[6].innerText).toBe(text);
   });
 });

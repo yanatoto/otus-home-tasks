@@ -11,12 +11,6 @@ export function addForm(el) {
   const input = document.createElement("input");
   const button = document.createElement("button");
 
-  for (let i = 1; i <= 3; i++) {
-    const p = document.createElement("p");
-    el.appendChild(p);
-    p.innerText = "Text";
-  }
-
   input.classList.add("input");
   button.classList.add("button");
   button.innerText = "Click";
@@ -28,6 +22,12 @@ export function addForm(el) {
   input.addEventListener("input", function () {
     button.hidden = !this.value.length;
   });
+
+  for (let i = 1; i <= 3; i++) {
+    const p = document.createElement("p");
+    el.appendChild(p);
+    p.innerText = "Text";
+  }
 
   button.addEventListener("click", function () {
     const pp = document.createElement("p");
