@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { doubleArrayElements } from "./task5.2";
 
 describe("doubleArrayElements", () => {

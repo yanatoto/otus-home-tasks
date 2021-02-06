@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import { sumOfPromptDigits } from "./task1.3";
 
 describe("consoleSumOfPromptDigits", () => {

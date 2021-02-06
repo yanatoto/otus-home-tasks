@@ -5,4 +5,3 @@ export function tableMult() {
     console.log(`${num} x ${i} = ${num * i}`);
   }
 }
-tableMult();

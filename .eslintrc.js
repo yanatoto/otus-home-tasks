@@ -10,6 +10,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "func-names": "off",
     "no-console": "off",
     "no-alert": "off",
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
