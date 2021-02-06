@@ -3,17 +3,6 @@
 // строка состоит из одного слова и false, если из
 // нескольких
 export function isWord(string) {
-  string.split(/,|\s+|,\s+/);
-  let res;
-
-  const substring = " ";
-  const param = string.indexOf(substring) !== -1;
-
-  if (param) {
-    res = "false";
-  } else {
-    res = "true";
-  }
-  return res;
+  const words = string.split(/,|\s+|,\s+/);
+  return words.length === 1;
 }
-isWord("Обратите внимание на дорогу");
