@@ -1,10 +1,9 @@
-import { getMinEl, getMaxEl } from "./task5.3";
+import { getMinMax } from "./task5.3";
 
-describe("getMinEl, getMaxEl", () => {
+describe("getMinMax", () => {
   it("returns min element of array", () => {
-    expect(getMinEl()).toEqual(1);
-  });
-  it("returns max element of array", () => {
-    expect(getMaxEl()).toEqual(59);
+    jest.spyOn(console, "log");
+    getMinMax();
+    expect(console.log).toBeCalledWith(1, 59);
   });
 });
