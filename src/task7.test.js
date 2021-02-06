@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { addForm } from "./task7";
 
 describe("addForm", () => {

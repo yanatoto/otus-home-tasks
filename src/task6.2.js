@@ -3,7 +3,9 @@
 // строка состоит из одного слова и false, если из
 // нескольких
 export function isWord(string) {
+  string.split(/,|\s+|,\s+/);
   let res;
+
   const substring = " ";
   const param = string.indexOf(substring) !== -1;
 

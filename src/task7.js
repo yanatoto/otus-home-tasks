@@ -1,7 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-use-before-define */
-/* eslint-disable no-console */
-/* eslint-disable func-names */
 // Сверстать страницу и подключить к ней файл со
 // скриптом. На странице должны быть три текстовых
 // параграфа, поле ввода и кнопка. Напишите скрипт,
