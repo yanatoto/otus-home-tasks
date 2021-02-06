@@ -1,5 +1,7 @@
+/* eslint-disable no-console */
+/* eslint-disable no-plusplus */
 export function fizzBuzz() {
-  for (var i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 100; i++) {
     if (i % 15 === 0) {
       console.log("FizzBuzz");
     } else if (i % 5 === 0) {
