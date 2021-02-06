@@ -2,7 +2,11 @@
 // является ли треугольник прямоугольным.
 
 export function rightTriangle(a, b, c) {
-  if (c ** 2 === a ** 2 + b ** 2) {
+  if (
+    c ** 2 === a ** 2 + b ** 2 ||
+    a ** 2 === c ** 2 + b ** 2 ||
+    b ** 2 === c ** 2 + a ** 2
+  ) {
     return true;
   }
   return false;
